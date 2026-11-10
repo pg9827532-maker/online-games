@@ -168,7 +168,6 @@ function renderGames() {
 
   const featuredList = filtered.slice(0, 4);
   featuredList.forEach((game, index) => featuredGames.appendChild(renderGameTile(game, index, true)));
-
   filtered.forEach((game, index) => allGames.appendChild(renderGameTile(game, index)));
 
   if (!filtered.length) {
@@ -182,11 +181,13 @@ function renderGames() {
     `;
     allGames.appendChild(emptyBox);
   }
+
+  bindGameButtons();
 }
 
-function attachGameButtons() {
+function bindGameButtons() {
   document.querySelectorAll('.game-play-btn').forEach(button => {
-    button.addEventListener('click', () => openGameModal(button.dataset.gameId));
+    button.onclick = () => openGameModal(button.dataset.gameId);
   });
 }
 
@@ -222,25 +223,11 @@ function openGameModal(gameId) {
     button.addEventListener('click', closeGameModal);
   });
 
-  if (game.id === 'memory-match') {
-    setupMemoryGame();
-  }
-
-  if (game.id === 'tic-tac-battle') {
-    setupTicTacToe();
-  }
-
-  if (game.id === 'rock-paper') {
-    setupRpsGame();
-  }
-
-  if (game.id === 'number-guess') {
-    setupGuessGame();
-  }
-
-  if (game.id === 'reaction-rush') {
-    setupReactionGame();
-  }
+  if (game.id === 'memory-match') setupMemoryGame();
+  if (game.id === 'tic-tac-battle') setupTicTacToe();
+  if (game.id === 'rock-paper') setupRpsGame();
+  if (game.id === 'number-guess') setupGuessGame();
+  if (game.id === 'reaction-rush') setupReactionGame();
 }
 
 function closeGameModal() {
@@ -575,4 +562,3 @@ browseAllBtn.addEventListener('click', () => {
 });
 
 renderGames();
-attachGameButtons();
