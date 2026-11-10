@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Online Games is your source for free browser games, fun challenges, and action-packed mini games to play instantly."
+    />
+    <title>Online Games | Best Online Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <nav class="nav container">
+          <div class="brand" aria-label="Online Games home">
+            <div class="brand-mark">OG</div>
+            <div>
+              <span class="brand-name">Online Games</span>
+              <small>Play instantly</small>
+            </div>
+          </div>
+
+          <div class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#categories">Categories</a>
+            <a href="#new">New</a>
+          </div>
+
+          <button class="nav-btn">Login</button>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero container">
+          <div class="hero-content">
+            <span class="eyebrow">Top-rated browser games</span>
+            <h1>Play the best online games for free.</h1>
+            <p>
+              Discover action, puzzle, racing, sports, and arcade games in one exciting place.
+              No download needed. Just click and play.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-btn" id="playFeaturedBtn">Play featured</button>
+              <button class="secondary-btn" id="browseAllBtn">Browse all</button>
+            </div>
+
+            <div class="stats" aria-label="Game stats">
+              <div>
+                <strong>120+</strong>
+                <span>Game titles</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Player rating</span>
+              </div>
+              <div>
+                <strong>20K+</strong>
+                <span>Daily players</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured game preview">
+            <div class="game-card feature-card">
+              <div class="game-card-top">
+                <span class="pill">Featured</span>
+                <span class="stars">★★★★★</span>
+              </div>
+              <div class="feature-image">
+                <div class="feature-badge">Arcade</div>
+              </div>
+              <div class="feature-copy">
+                <h3>Sky Rush</h3>
+                <p>Fly through neon skies and dodge incoming obstacles.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="search-wrap container">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M10 2a8 8 0 015.94 13.31l5.39 5.39 1.41-1.41-5.39-5.39A8 8 0 1110 2zm0 2a6 6 0 104.24 10.24A6 6 0 0010 4z" fill="currentColor"/>
+            </svg>
+            <input id="searchInput" type="text" placeholder="Search games, categories, or tags" />
+          </div>
+        </section>
+
+        <section id="featured" class="games-section container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow alt">Popular</span>
+              <h2>Most played this week</h2>
+            </div>
+            <a href="#all-games">View all</a>
+          </div>
+          <div id="featuredGames" class="games-grid"></div>
+        </section>
+
+        <section id="categories" class="categories-section container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow alt">Categories</span>
+              <h2>Choose your vibe</h2>
+            </div>
+          </div>
+          <div class="category-grid">
+            <button class="category-item active" data-category="all">All games</button>
+            <button class="category-item" data-category="action">Action</button>
+            <button class="category-item" data-category="puzzle">Puzzle</button>
+            <button class="category-item" data-category="racing">Racing</button>
+            <button class="category-item" data-category="sports">Sports</button>
+            <button class="category-item" data-category="multiplayer">Multiplayer</button>
+          </div>
+        </section>
+
+        <section id="all-games" class="games-section container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow alt">All games</span>
+              <h2>New & trending</h2>
+            </div>
+          </div>
+          <div id="allGames" class="games-grid all-games-grid"></div>
+        </section>
+
+        <section id="new" class="games-section container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow alt">Fresh</span>
+              <h2>Latest releases</h2>
+            </div>
+          </div>
+          <div class="release-grid">
+            <article class="release-card">
+              <div class="release-icon">⚡</div>
+              <div>
+                <h3>Nova Drift</h3>
+                <p>Fast-paced action in a neon space challenge.</p>
+              </div>
+            </article>
+            <article class="release-card">
+              <div class="release-icon">🧠</div>
+              <div>
+                <h3>Mind Maze</h3>
+                <p>Bright puzzle rooms that get harder every level.</p>
+              </div>
+            </article>
+            <article class="release-card">
+              <div class="release-icon">🏁</div>
+              <div>
+                <h3>Speed Circuit</h3>
+                <p>Race against the clock and beat your best score.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <div class="brand-mark">OG</div>
+              <div>
+                <span class="brand-name">Online Games</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="gameModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-btn" aria-label="Close game" data-close="true">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
