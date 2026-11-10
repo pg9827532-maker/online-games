@@ -2,244 +2,248 @@ const games = [
   {
     id: 'sky-rush',
     name: 'Sky Rush',
-    category: 'action',
-    rating: '4.9',
-    tags: ['Arcade', 'Fast'],
-    difficulty: 'Medium',
-    short: 'Fly through neon tunnels and survive the rush.',
-    description: 'A colorful arcade challenge where every second counts. Dodge incoming barriers, collect boosts, and push your score higher than ever before.'
+    tags: ['action', 'arcade', 'racing'],
+    rating: 4.9,
+    players: '120K',
+    desc: 'Neon flight challenge with instant action.',
+    description: 'Dodge incoming barriers, collect power-ups, and survive a relentless neon sky run.',
+    difficulty: 'Medium'
   },
   {
     id: 'pixel-puzzle',
     name: 'Pixel Puzzle',
-    category: 'puzzle',
-    rating: '4.8',
-    tags: ['Logic', 'Brain'],
-    difficulty: 'Easy',
-    short: 'Match patterns and clear the board.',
-    description: 'Connect glowing tiles to clear each puzzle board. More combos mean more points and a bigger challenge.'
+    tags: ['puzzle', 'logic', 'brain'],
+    rating: 4.8,
+    players: '82K',
+    desc: 'Match colorful tiles to solve each board.',
+    description: 'Line up glowing tiles and trigger combos to clear each puzzle board with logic and speed.',
+    difficulty: 'Easy'
   },
   {
     id: 'speed-circuit',
     name: 'Speed Circuit',
-    category: 'racing',
-    rating: '4.7',
-    tags: ['Racing', 'Timer'],
-    difficulty: 'Hard',
-    short: 'Tight laps, sharp turns, and big speed.',
-    description: 'Jump into a quick racing challenge and beat your own time. Every lap rewards precision and timing.'
+    tags: ['racing', 'sports', 'speed'],
+    rating: 4.7,
+    players: '91K',
+    desc: 'Fast laps and split-second decisions.',
+    description: 'Burn through checkpoints and beat your best time in a slick racing sprint.',
+    difficulty: 'Hard'
   },
   {
     id: 'goal-zone',
     name: 'Goal Zone',
-    category: 'sports',
-    rating: '4.6',
-    tags: ['Sports', 'Skill'],
-    difficulty: 'Medium',
-    short: 'Score from every angle in a slick sports duel.',
-    description: 'Test your aim and reflexes as you take on different challenge shots. Every goal counts toward your score streak.'
+    tags: ['sports', 'skill', 'action'],
+    rating: 4.6,
+    players: '74K',
+    desc: 'Precision shots and quick reactions.',
+    description: 'Challenge your aim with timed shots and increasingly tricky goals.',
+    difficulty: 'Medium'
   },
   {
     id: 'arena-duel',
     name: 'Arena Duel',
-    category: 'multiplayer',
-    rating: '4.9',
-    tags: ['PvP', 'Battle'],
-    difficulty: 'Hard',
-    short: 'Take the arena by storm with smart moves.',
-    description: 'Quick-fire battle mode built for showdowns. Read your opponent, time your attack, and win the round.'
+    tags: ['multiplayer', 'battle', 'action'],
+    rating: 4.9,
+    players: '138K',
+    desc: 'Battle in a fast arena showdown.',
+    description: 'Read your opponent, strike at the right moment, and win the arena duel.',
+    difficulty: 'Hard'
   },
   {
     id: 'memory-match',
     name: 'Memory Match',
-    category: 'puzzle',
-    rating: '4.8',
-    tags: ['Memory', 'Pairs'],
-    difficulty: 'Easy',
-    short: 'Flip cards and match every pair.',
-    description: 'Reveal hidden cards and match identical icons before the timer runs out. Focus and patience unlock the perfect run.'
+    tags: ['puzzle', 'memory', 'brain'],
+    rating: 4.8,
+    players: '68K',
+    desc: 'Flip and match cards before the timer ends.',
+    description: 'Reveal hidden cards and match pairs to complete the full memory board.',
+    difficulty: 'Easy'
   },
   {
     id: 'tic-tac-battle',
     name: 'Tic Tac Battle',
-    category: 'multiplayer',
-    rating: '4.7',
-    tags: ['Classic', 'Strategy'],
-    difficulty: 'Medium',
-    short: 'Outsmart your rival and claim three in a row.',
-    description: 'The classic board game with a fresh arcade twist. Play against the computer and chase a winning line.'
+    tags: ['multiplayer', 'strategy', 'classic'],
+    rating: 4.7,
+    players: '58K',
+    desc: 'Classic board game with a challenge twist.',
+    description: 'Take on the computer and line up three in a row before your rival does.',
+    difficulty: 'Medium'
   },
   {
     id: 'rock-paper',
     name: 'Rock Paper Fire',
-    category: 'action',
-    rating: '4.5',
-    tags: ['Quick', 'Luck'],
-    difficulty: 'Easy',
-    short: 'Challenge the system in a rapid duel.',
-    description: 'A speed-focused twist on a classic game. Challenge the computer, read the pattern, and win the series.'
+    tags: ['action', 'quick', 'arcade'],
+    rating: 4.5,
+    players: '64K',
+    desc: 'Quick duel with a fiery twist.',
+    description: 'Pick your move and beat the computer in a fast arcade showdown.',
+    difficulty: 'Easy'
   },
   {
     id: 'number-guess',
     name: 'Number Guess',
-    category: 'puzzle',
-    rating: '4.6',
-    tags: ['Guessing', 'Logic'],
-    difficulty: 'Medium',
-    short: 'Track clues and find the hidden number.',
-    description: 'A logic challenge where high and low clues help you narrow the answer. Keep your guesses tight and your streak alive.'
+    tags: ['puzzle', 'logic', 'guessing'],
+    rating: 4.6,
+    players: '51K',
+    desc: 'Read the hints and guess the hidden number.',
+    description: 'Use the clues to narrow down the answer and keep a clean streak alive.',
+    difficulty: 'Medium'
   },
   {
     id: 'reaction-rush',
     name: 'Reaction Rush',
-    category: 'action',
-    rating: '4.9',
-    tags: ['Reflex', 'Speed'],
-    difficulty: 'Hard',
-    short: 'Test your timing under pressure.',
-    description: 'Press the button as fast as you can once the challenge begins. The faster your reaction, the better your score.'
+    tags: ['action', 'speed', 'challenge'],
+    rating: 4.9,
+    players: '115K',
+    desc: 'Test your timing under pressure.',
+    description: 'Wait for the signal, then click as fast as you can and chase a better score.',
+    difficulty: 'Hard'
+  },
+  {
+    id: 'block-fall',
+    name: 'Block Fall',
+    tags: ['puzzle', 'arcade', 'skill'],
+    rating: 4.7,
+    players: '70K',
+    desc: 'Stack, match, and survive the falling blocks.',
+    description: 'Build your combo and stay alive as the pace picks up and the pressure builds.',
+    difficulty: 'Medium'
+  },
+  {
+    id: 'race-run',
+    name: 'Race Run',
+    tags: ['racing', 'arcade', 'speed'],
+    rating: 4.8,
+    players: '96K',
+    desc: 'Slip through traffic and chase a record run.',
+    description: 'Beat the traffic, time your boosts, and set a new top score on every run.',
+    difficulty: 'Hard'
   }
 ];
 
-const featuredGames = document.getElementById('featuredGames');
-const allGames = document.getElementById('allGames');
-const searchInput = document.getElementById('searchInput');
-const playFeaturedBtn = document.getElementById('playFeaturedBtn');
-const browseAllBtn = document.getElementById('browseAllBtn');
+const tagMeta = {
+  all: 'All games',
+  action: 'Action',
+  arcade: 'Arcade',
+  puzzle: 'Puzzle',
+  racing: 'Racing',
+  sports: 'Sports',
+  multiplayer: 'Multiplayer',
+  logic: 'Logic',
+  brain: 'Brain',
+  speed: 'Speed',
+  strategy: 'Strategy',
+  challenge: 'Challenge',
+  classic: 'Classic'
+};
+
+const tagFilters = document.getElementById('tagFilters');
+const topTags = document.getElementById('topTags');
+const gamesGrid = document.getElementById('gamesGrid');
+const resultCount = document.getElementById('resultCount');
 const modal = document.getElementById('gameModal');
 const modalContent = document.getElementById('modalContent');
-const categoryButtons = [...document.querySelectorAll('.category-item')];
 
-let selectedCategory = 'all';
+const state = {
+  activeTag: 'all',
+  sort: 'popular'
+};
 
-function getGameBackground(index) {
-  const colors = [
-    'linear-gradient(135deg, rgba(124,92,255,0.44), rgba(70,215,255,0.32))',
-    'linear-gradient(135deg, rgba(66,211,146,0.28), rgba(124,92,255,0.22))',
-    'linear-gradient(135deg, rgba(255,130,104,0.38), rgba(255,204,92,0.22))',
-    'linear-gradient(135deg, rgba(70,215,255,0.26), rgba(124,92,255,0.28))',
-    'linear-gradient(135deg, rgba(247,87,123,0.28), rgba(255,202,97,0.18))'
-  ];
-  return colors[index % colors.length];
+function getTagButtons() {
+  return Object.entries(tagMeta).map(([key, label]) => ({ key, label }));
 }
 
-function renderGameTile(game, index, compact = false) {
-  const tile = document.createElement('article');
-  tile.className = 'game-tile';
-  tile.innerHTML = `
-    <div class="game-thumb" style="background:${getGameBackground(index)}">
-      <span class="game-badge">${game.category}</span>
-      <span class="game-rating">★ ${game.rating}</span>
-      <span class="game-thumb-label">${game.name.split(' ')[0]}</span>
-    </div>
-    <div class="game-meta">
-      <h3>${game.name}</h3>
-      <p>${game.short}</p>
-      <div class="game-tag-row">
-        <div class="game-tags">
-          ${game.tags.slice(0, 2).map(tag => `<span class="game-tag">${tag}</span>`).join('')}
-        </div>
-      </div>
-      <div class="game-bottom-row">
-        <span class="game-difficulty">${game.difficulty}</span>
-        <button class="game-play-btn" data-game-id="${game.id}">Play Now</button>
-      </div>
-    </div>
-  `;
+function renderTagFilters() {
+  tagFilters.innerHTML = getTagButtons()
+    .map(
+      ({ key, label }) => `
+        <button class="tag-btn ${state.activeTag === key ? 'active' : ''}" data-tag="${key}">${label}</button>
+      `
+    )
+    .join('');
 
-  if (compact) {
-    tile.querySelector('.game-play-btn').style.padding = '8px 10px';
+  tagFilters.querySelectorAll('.tag-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      state.activeTag = button.dataset.tag;
+      renderTagFilters();
+      renderGames();
+    });
+  });
+}
+
+function renderTopTags() {
+  const popular = ['action', 'puzzle', 'racing', 'sports', 'multiplayer', 'arcade'];
+  topTags.innerHTML = popular
+    .map(
+      tag => `
+        <button class="tag-btn ${state.activeTag === tag ? 'active' : ''}" data-tag="${tag}">${tagMeta[tag]}</button>
+      `
+    )
+    .join('');
+
+  topTags.querySelectorAll('.tag-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      state.activeTag = button.dataset.tag;
+      renderTagFilters();
+      renderTopTags();
+      renderGames();
+    });
+  });
+}
+
+function getVisibleGames() {
+  let filtered = games.filter(game => {
+    if (state.activeTag === 'all') return true;
+    return game.tags.includes(state.activeTag);
+  });
+
+  if (state.sort === 'newest') {
+    filtered = [...filtered].reverse();
   }
 
-  return tile;
+  return filtered;
 }
 
 function renderGames() {
-  const query = searchInput.value.trim().toLowerCase();
-  const filtered = games.filter(game => {
-    const matchesCategory = selectedCategory === 'all' || game.category === selectedCategory;
-    const searchableText = `${game.name} ${game.category} ${game.tags.join(' ')}`.toLowerCase();
-    const matchesQuery = searchableText.includes(query);
-    return matchesCategory && matchesQuery;
+  const filtered = getVisibleGames();
+  resultCount.textContent = `${filtered.length} games`;
+
+  gamesGrid.innerHTML = filtered
+    .map((game, index) => {
+      const accent = [
+        'linear-gradient(135deg, rgba(124,92,255,0.42), rgba(70,215,255,0.28))',
+        'linear-gradient(135deg, rgba(255,149,64,0.34), rgba(70,215,255,0.22))',
+        'linear-gradient(135deg, rgba(66,211,146,0.28), rgba(124,92,255,0.24))',
+        'linear-gradient(135deg, rgba(247,87,123,0.28), rgba(124,92,255,0.24))'
+      ][index % 4];
+
+      return `
+        <article class="game-card">
+          <div class="game-card-art" style="background:${accent}">
+            <span class="game-card-label">${game.tags[0]}</span>
+            <span class="game-card-rating">★ ${game.rating}</span>
+            <span class="game-card-name">${game.name.split(' ')[0]}</span>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">${game.name}</h3>
+            <p class="game-card-copy">${game.desc}</p>
+            <div class="game-card-tags">
+              ${game.tags.slice(0, 3).map(tag => `<span class="game-card-tag">${tagMeta[tag] || tag}</span>`).join('')}
+            </div>
+            <div class="meta-row">
+              <small>${game.players} players</small>
+              <button class="play-btn" data-game-id="${game.id}">Play</button>
+            </div>
+          </div>
+        </article>
+      `;
+    })
+    .join('');
+
+  gamesGrid.querySelectorAll('.play-btn').forEach(button => {
+    button.addEventListener('click', () => openGameModal(button.dataset.gameId));
   });
-
-  featuredGames.innerHTML = '';
-  allGames.innerHTML = '';
-
-  const featuredList = filtered.slice(0, 4);
-  featuredList.forEach((game, index) => featuredGames.appendChild(renderGameTile(game, index, true)));
-  filtered.forEach((game, index) => allGames.appendChild(renderGameTile(game, index)));
-
-  if (!filtered.length) {
-    const emptyBox = document.createElement('div');
-    emptyBox.className = 'game-tile';
-    emptyBox.innerHTML = `
-      <div class="game-meta">
-        <h3>No games found</h3>
-        <p>Try another term or change the selected category.</p>
-      </div>
-    `;
-    allGames.appendChild(emptyBox);
-  }
-
-  bindGameButtons();
 }
-
-function bindGameButtons() {
-  document.querySelectorAll('.game-play-btn').forEach(button => {
-    button.onclick = () => openGameModal(button.dataset.gameId);
-  });
-}
-
-function openGameModal(gameId) {
-  const game = games.find(item => item.id === gameId);
-  if (!game) return;
-
-  const meta = [
-    `<span>${game.category}</span>`,
-    `<span>★ ${game.rating}</span>`,
-    `<span>${game.difficulty}</span>`
-  ].join('');
-
-  const html = `
-    <div class="modal-head">
-      <h2 id="modalTitle">${game.name}</h2>
-      <button class="primary-btn" data-close="true">Close</button>
-    </div>
-    <div class="modal-meta">${meta}</div>
-    <div class="game-content">
-      <div class="game-description">${game.description}</div>
-      <div class="game-panel">
-        ${renderGameModule(game)}
-      </div>
-    </div>
-  `;
-
-  modalContent.innerHTML = html;
-  modal.classList.remove('hidden');
-  modal.setAttribute('aria-hidden', 'false');
-
-  document.querySelectorAll('[data-close="true"]').forEach(button => {
-    button.addEventListener('click', closeGameModal);
-  });
-
-  if (game.id === 'memory-match') setupMemoryGame();
-  if (game.id === 'tic-tac-battle') setupTicTacToe();
-  if (game.id === 'rock-paper') setupRpsGame();
-  if (game.id === 'number-guess') setupGuessGame();
-  if (game.id === 'reaction-rush') setupReactionGame();
-}
-
-function closeGameModal() {
-  modal.classList.add('hidden');
-  modal.setAttribute('aria-hidden', 'true');
-}
-
-modal.addEventListener('click', event => {
-  if (event.target.dataset.close === 'true') {
-    closeGameModal();
-  }
-});
 
 function renderGameModule(game) {
   switch (game.id) {
@@ -300,6 +304,53 @@ function renderGameModule(game) {
   }
 }
 
+function openGameModal(gameId) {
+  const game = games.find(item => item.id === gameId);
+  if (!game) return;
+
+  const meta = [
+    `<span>${game.tags[0]}</span>`,
+    `<span>★ ${game.rating}</span>`,
+    `<span>${game.difficulty}</span>`
+  ].join('');
+
+  modalContent.innerHTML = `
+    <div class="modal-head">
+      <h2 id="modalTitle">${game.name}</h2>
+      <button class="primary-btn" data-close="true">Close</button>
+    </div>
+    <div class="modal-meta">${meta}</div>
+    <div class="game-content">
+      <div class="game-description">${game.description}</div>
+      <div class="game-panel">${renderGameModule(game)}</div>
+    </div>
+  `;
+
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+
+  document.querySelectorAll('[data-close="true"]').forEach(button => {
+    button.addEventListener('click', closeGameModal);
+  });
+
+  if (game.id === 'memory-match') setupMemoryGame();
+  if (game.id === 'tic-tac-battle') setupTicTacToe();
+  if (game.id === 'rock-paper') setupRpsGame();
+  if (game.id === 'number-guess') setupGuessGame();
+  if (game.id === 'reaction-rush') setupReactionGame();
+}
+
+function closeGameModal() {
+  modal.classList.add('hidden');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+modal.addEventListener('click', event => {
+  if (event.target.dataset.close === 'true') {
+    closeGameModal();
+  }
+});
+
 function setupMemoryGame() {
   const symbols = ['🎯', '🚀', '⭐', '🎮', '🔥', '💎', '⚡', '🎲'];
   const board = document.getElementById('memoryBoard');
@@ -315,16 +366,18 @@ function setupMemoryGame() {
 
   function buildBoard() {
     const deck = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
-    cards = deck.map((symbol, index) => ({ id: index, symbol, matched: false, visible: false }));
+    cards = deck.map((symbol, index) => ({ id: index, symbol, matched: false }));
     board.innerHTML = '';
+
     cards.forEach(card => {
       const button = document.createElement('button');
       button.className = 'memory-card';
-      button.dataset.id = card.id;
+      button.dataset.id = String(card.id);
       button.textContent = '?';
       button.addEventListener('click', () => revealCard(card.id, button));
       board.appendChild(button);
     });
+
     flipped = [];
     moves = 0;
     matches = 0;
@@ -336,7 +389,6 @@ function setupMemoryGame() {
     const card = cards.find(item => item.id === id);
     if (!card || card.matched || flipped.includes(id) || locked) return;
 
-    card.visible = true;
     button.textContent = card.symbol;
     button.classList.add('revealed');
     flipped.push(id);
@@ -357,30 +409,21 @@ function setupMemoryGame() {
         matchesNode.textContent = `${matches} / 8`;
         const buttons = board.querySelectorAll('.memory-card');
         buttons.forEach(element => {
-          const elementId = Number(element.dataset.id);
-          const matchCard = cards.find(item => item.id === elementId);
-          if (matchCard.matched) {
+          const matchCard = cards.find(item => item.id === Number(element.dataset.id));
+          if (matchCard && matchCard.matched) {
             element.classList.add('matched');
           }
         });
         flipped = [];
         locked = false;
-
-        if (matches === 8) {
-          matchesNode.textContent = '8 / 8';
-          setTimeout(() => alert('You won! Great memory run.'), 100);
-        }
+        if (matches === 8) setTimeout(() => alert('You won! Great memory run.'), 100);
       } else {
         setTimeout(() => {
-          const buttons = board.querySelectorAll('.memory-card');
-          buttons.forEach(element => {
+          board.querySelectorAll('.memory-card').forEach(element => {
             const elementId = Number(element.dataset.id);
             if (flipped.includes(elementId)) {
-              const currentCard = cards.find(item => item.id === elementId);
-              if (!currentCard.matched) {
-                element.textContent = '?';
-                element.classList.remove('revealed');
-              }
+              element.textContent = '?';
+              element.classList.remove('revealed');
             }
           });
           flipped = [];
@@ -399,7 +442,7 @@ function setupTicTacToe() {
   const status = document.getElementById('tttStatus');
   const resetBtn = document.getElementById('resetTtt');
   const winningLines = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]
+    [0, 1, 2],[3, 4, 5],[6, 7, 8],[0, 3, 6],[1, 4, 7],[2, 5, 8],[0, 4, 8],[2, 4, 6]
   ];
 
   let grid = Array(9).fill('');
@@ -440,14 +483,13 @@ function setupTicTacToe() {
     return null;
   }
 
-  function resetBoard() {
+  resetBtn.addEventListener('click', () => {
     grid = Array(9).fill('');
     current = 'X';
     status.textContent = 'Player X';
     renderBoard();
-  }
+  });
 
-  resetBtn.addEventListener('click', resetBoard);
   renderBoard();
 }
 
@@ -463,8 +505,7 @@ function setupRpsGame() {
         paper: { rock: 'You win!', paper: 'Draw!', scissors: 'You lose!' },
         scissors: { rock: 'You lose!', paper: 'You win!', scissors: 'Draw!' }
       };
-      const text = `You picked ${player}. Computer picked ${bot}. ${outcomes[player][bot]}`;
-      result.textContent = text;
+      result.textContent = `You picked ${player}. Computer picked ${bot}. ${outcomes[player][bot]}`;
     });
   });
 }
@@ -546,19 +587,14 @@ function setupReactionGame() {
   });
 }
 
-searchInput.addEventListener('input', renderGames);
-
-categoryButtons.forEach(button => {
+document.querySelectorAll('.sort-btn').forEach(button => {
   button.addEventListener('click', () => {
-    categoryButtons.forEach(item => item.classList.toggle('active', item === button));
-    selectedCategory = button.dataset.category;
+    document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.toggle('active', btn === button));
+    state.sort = button.textContent.toLowerCase();
     renderGames();
   });
 });
 
-playFeaturedBtn.addEventListener('click', () => openGameModal('reaction-rush'));
-browseAllBtn.addEventListener('click', () => {
-  document.getElementById('all-games').scrollIntoView({ behavior: 'smooth' });
-});
-
+renderTagFilters();
+renderTopTags();
 renderGames();
